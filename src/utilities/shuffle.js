@@ -10,7 +10,7 @@ const shuffle = () => {
         { image: '/assets/Temperate-Forest.png' },
     ];
     return [...assets, ...assets]
-        .sort(() => Math.random - .5)
+        .sort(() => Math.random - 0.5)
         .map((card) => ({ ...card, id: Math.random() }));
 };
 
