@@ -2,7 +2,6 @@ import { useState } from 'react';
 
 const useAppBadge = () => {
   const [counter, setCounter] = useState(1);
-    //set badge
   const setBadge = () => {
     setCounter(counter + 1);
     if (navigator.setAppBadge) {
@@ -11,7 +10,6 @@ const useAppBadge = () => {
       navigator.setClientBadge();
     }
   };
-  //clear badge
   const clearBadge = () => {
     setCounter(1);
     if (navigator.clearAppBadge) {
